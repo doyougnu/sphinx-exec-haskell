@@ -1,16 +1,10 @@
-[tool.poetry]
-name = "sphinx-exec-haskell"
-version = "0.1.0"
-description = "Execute Haskell code from sphinx code blocks"
-authors = ["doyougnu <jeffrey.young@iohk.io>"]
-license = "MIT"
-readme = "README.md"
-packages = [{include = "sphinx_exec_haskell"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinx-exec-haskell"
+version = "0.0.1"
+dependencies = [
+    "docutils"
+]
