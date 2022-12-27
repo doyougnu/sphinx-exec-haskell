@@ -5,7 +5,6 @@ with pkgs;
 let sphinx-exec-haskell = python3.pkgs.buildPythonPackage {
       pname   = "sphinx-exec-haskell";
       version = "0.10.0";
-      format  = "pyproject";
 
       src = ./.;
 
