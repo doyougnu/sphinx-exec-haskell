@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sphinx-exec-haskell"
 version = "0.0.1"
+description = "A sphinx extension to execute and test haskell code blocks"
 dependencies = [
     "docutils"
 ]
