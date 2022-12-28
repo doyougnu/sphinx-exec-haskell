@@ -21,7 +21,7 @@
             default = import ./sphinx-exec-haskell.nix { inherit pkgs; };
           };
           devShells = {
-            default = packages.default;
+            default = pkgs.mkShell { buildInputs = [ packages.default.buildInputs ]; };
           };
         }
       );

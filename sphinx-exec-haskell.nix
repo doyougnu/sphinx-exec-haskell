@@ -2,7 +2,7 @@
 
 with pkgs;
 
-let sphinx-exec-haskell = python3.pkgs.buildPythonPackage {
+python3.pkgs.buildPythonPackage {
       pname   = "sphinx-exec-haskell";
       version = "0.10.0";
 
@@ -19,9 +19,6 @@ let sphinx-exec-haskell = python3.pkgs.buildPythonPackage {
         license     = licenses.bsd3;
         maintainers = with maintainers; [ doyougnu ];
       };
-    };
-
-
-
-in
-mkShell { packages = [ sphinx-exec-haskell ]; }
+    }
+# in
+# mkShell { packages = [ sphinx-exec-haskell ]; }
