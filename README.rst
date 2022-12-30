@@ -16,6 +16,6 @@ Related Works
 Changelog
 ---------
 
-#. 0.1 (30.12.2022)
+#. **0.1 (30.12.2022)**
 
    Investigating domain space
